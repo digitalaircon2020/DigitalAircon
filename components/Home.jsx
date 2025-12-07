@@ -44,8 +44,9 @@ function Home() {
                             </a>
 
                             <button
-                                className="px-7 py-3.5 rounded-xl bg-white border-2 border-[#1e40af] text-[#1e40af] font-semibold hover:bg-[#1e40af] hover:text-white shadow-lg transition transform hover:-translate-y-1 duration-300"
-                                aria-label="Book AC Service Appointment cursor-pointer"
+                                className="px-7 py-3.5 rounded-xl bg-white border-2 border-[#1e40af] text-[#1e40af] font-semibold hover:bg-[#1e40af] hover:text-white shadow-lg transition transform hover:-translate-y-1 duration-300 cursor-pointer active:bg-[#1e40af] active:text-white
+focus-visible:-translate-y-1 focus-visible:bg-[#1e40af] focus-visible:text-white"
+                                aria-label="Book AC Service Appointment"
                             >
                                 Book Free Inspection
                             </button>

@@ -20,7 +20,7 @@ export default function AppleAirconForm() {
             return;
         }
 
-        const whatsappNumber = "919000012345"; // 🔴 replace with your WhatsApp number (no +)
+        const whatsappNumber = "918879873774";
 
         const text = `
 Hello Apple Aircon 👋
@@ -38,7 +38,10 @@ Hello Apple Aircon 👋
 
     return (
         <section className="bg-[#f7faff] py-16 px-4">
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+            <h1 className="text-4xl md:text-5xl text-center font-extrabold text-[#1e40af]">
+                Send Us a Message
+            </h1>
+            <div className="max-w-6xl mt-12 mx-auto grid md:grid-cols-2 gap-10 items-center">
 
                 {/* LEFT CONTENT */}
                 <div>

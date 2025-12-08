@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link"; // if using Next.js
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -116,7 +117,7 @@ const serviceDetails = {
             "Panasonic",
             "Whirlpool",
             "Bajaj",
-            "Morphy Richards",
+            // "Morphy Richards",
             "Kenstar",
             "Haier",
         ],
@@ -173,6 +174,29 @@ const serviceDetails = {
         icon: "🧊",
     },
 };
+
+// Map of brands to their online logo URLs
+const brandLogos = {
+    "LG": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRraVvIfk4RZE6AyAWJXI-LBnQTaO48xIV4zQ&s",
+    "Blue Star": "https://www.bluestarindia.com/img/logo.png",
+    "Daikin": "https://www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/logo_daikin-png.png?rev=-1&hash=1F64F477E5561302A1D2A31DC3D59580",
+    "Samsung": "https://i.pinimg.com/1200x/e8/31/88/e8318867025e2d1a39e5b502874bcb71.jpg",
+    "Voltas": "https://cdn.shopify.com/s/files/1/0578/6845/2026/files/Voltas-beko-logo-svg.svg",
+    "Hitachi": "https://www.hitachi.com/content/dam/hitachi/common/image/hitachi-logo.png",
+    "Carrier": "https://images.carriercms.com/image/upload/h_150,q_100,f_auto/v1573562016/common/logos/carrier-corp-logo.png",
+    "Whirlpool": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAATCAMAAADyMz7ZAAAAxlBMVEX///8AAAAiHh/y8vK2trZhX2ArKCmnpqZGREUzMDHm5ubyxnaIh4f5+fnR0dF6eHn88+XLy8u/v7+WlZWOjo5VVFRLSUk6NzhmZWWfnp/Y2NhbWVmwr7D0zo7vuEfspwDuszXwvVzuryDywmtfUDr5xF/55cYQCQtgWFD3263GiQDk6O9ycHDat3r1qwBJMABZXGP/9d7AqYMkKTZ8Yzj/78mRlZyMbTX+tgCigEJ7gIgaFRa3r6JGPzaGi5U8Qk1lTyjqnQAtAZXUAAAB0ElEQVQ4jZWSiXLaMBBAd5HkQz6EhW/siJAU6talSa+kpRf//1NdGdMJxDNppZn1jrxvb4CXz7y9Mqv5PxheYNctQeuby3dPkEiwIrlAwHB41Dkbvs4SgnbQroMzSqG1Bkgxsz7yE6gwPoK3r8YUzeYcnEFsbYot4RGFxXR4j44cOK9Hw87AJQi4AIYKE8q3BixVkUngGdOKF7EvoHTDQkizqYWfJYSERZEewdwDjZJChRQVHdWjBy4yjk5ZE+hjnuGbm7eYc0GeM6wq7AewQltqX4BfwpBqj0dQUqoEUvPeGZliRH9DZrtIESxYYzxT0FDQBobmpOfgEja793Hp2JJFTSVZWwsCCuQgScpJ8O7+8AFPYPwU7LdIU5ttByfPwI+fdp+/ILMNAFQM3b+pkgN/GJ16Ds6W8PD49RtNuUahBU3Ow8bFEtSejGVu1ybJbbM9Ul0Pvv9g2iOw/Nk9PvxyFDUm8dDTNGG135PzhZjez6uTEux+302bTJ523K+5WdmuUjWyqZtY60TXmrlJzZNkElyP/IEWfJYDsIZrVzWx21Q61Jw3Li+nuPuVlZ1Z2wWPpW0DXcaARRGjG1llEjy0XWBM9x/FjScw62Dzgs0fqAwe+RSqANAAAAAASUVORK5CYII=",
+    "Panasonic": "https://www.panasonic.com/content/dam/panasonic/common/plogo-horizontal.svg",
+    "Godrej": "https://static.godrejenterprises.com/godrej_enterprises_group_logo_611fba0ba8.webp",
+    "Haier": "https://upload.wikimedia.org/wikipedia/commons/6/64/Haier_logo.svg",
+    "IFB": "https://upload.wikimedia.org/wikipedia/commons/4/49/IFB.png",
+    "Bosch": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Bosch-logo.svg/500px-Bosch-logo.svg.png",
+    "Electrolux": "https://www.electrolux.in/globalassets/homepage/electrolux-logo.svg",
+    "Onida": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Onida_Electronics.svg/330px-Onida_Electronics.svg.png",
+    "Bajaj": "https://www.bajajelectricals.com/cdn/shop/files/simply-otp-login-banner.png?v=1722601845&width=220",
+    // "Morphy Richards": "https://upload.wikimedia.org/wikipedia/commons/3/36/Morphy_Richards_logo.svg",
+    "Kenstar": "https://kenstar.in/cdn/shop/files/Kenstar_LTKL_Logo-02_1.png?v=1709534315",
+};
+
 
 export default function ServiceDetailPage() {
     const searchParams = useSearchParams();
@@ -276,7 +300,7 @@ export default function ServiceDetailPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
                 <div className="grid lg:grid-cols-3 gap-8">
                     {/* Left Content - Services & Description */}
-                    <div className="lg:col-span-2 space-y-8">
+                    <div className="lg:col-span-2 space-y-8 mt-12">
                         {/* Description Card */}
                         <div className="bg-white rounded-3xl p-8 shadow-lg">
                             <h2 className="text-2xl font-bold text-[#1e40af] mb-4">About Our Service</h2>
@@ -310,26 +334,28 @@ export default function ServiceDetailPage() {
                     </div>
 
                     {/* Right Sidebar */}
-                    <aside className="space-y-8">
+                    <aside className="space-y-8 mt-12">
                         {/* Brands Card */}
                         <div className="bg-white rounded-3xl p-8 shadow-lg sticky top-8">
                             <h3 className="text-xl font-bold text-[#1e40af] mb-6">Brands We Service</h3>
 
                             {/* Brands Grid */}
                             <div className="grid grid-cols-3 gap-4 mb-6">
-                                {service.brands.slice(0, showAllBrands ? service.brands.length : 9).map((brand, i) => (
-                                    <div
-                                        key={i}
-                                        className="bg-gray-50 rounded-xl p-4 text-center hover:bg-blue-50 transition group over"
-                                    >
-                                        <div className="text-lg font-semibold text-gray-800 group-hover:text-[#1e40af]">
-                                            {brand}
+                                {service.brands
+                                    .slice(0, showAllBrands ? service.brands.length : 9)
+                                    .map((brand, i) => (
+                                        <div
+                                            key={i}
+                                            className="bg-gray-50 rounded-xl p-4 text-center transition group flex flex-col items-center justify-center gap-2"
+                                        >
+                                            <img
+                                                src={brandLogos[brand]}
+                                                alt={brand}
+                                                className="h-12 object-contain"
+                                            />
+                                            {/* <span className="text-gray-800 font-semibold">{brand}</span> */}
                                         </div>
-                                        <div className="flex items-center justify-center mt-2 text-green-600">
-                                            <CheckCircle className="h-4 w-4" />
-                                        </div>
-                                    </div>
-                                ))}
+                                    ))}
                             </div>
 
                             {/* Show More Button */}

@@ -8,6 +8,7 @@ export const metadata = {
 import Home from "../components/Home";
 import ServicesHighlight from "../components/ServicesHighlight";
 import ServiceForm from "../components/ServiceForm";
+import ChooseUs from "../components/ChooseUs";
 
 
 
@@ -18,9 +19,11 @@ export default function Page() {
     <>
     <Home />
     <ServicesHighlight />
+    <ChooseUs />
 <div id="serviceForm">
   <ServiceForm />
 </div>
+
 
     </>
 

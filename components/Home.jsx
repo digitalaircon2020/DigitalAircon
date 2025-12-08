@@ -3,7 +3,7 @@
 import React from "react";
 import ServicesHighlight from "./ServicesHighlight";
 
-function Home() {
+export default function Home() {
     return (
         <>
             <div className="w-full min-h-screen bg-linear-to-br from-[#eef4ff] via-[#d9e8ff] to-[#bbd4ff] flex items-center justify-center px-4 md:px-6 py-8">
@@ -96,4 +96,3 @@ focus-visible:-translate-y-1 focus-visible:bg-[#1e40af] focus-visible:text-white
     );
 }
 
-export default Home;

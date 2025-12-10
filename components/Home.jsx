@@ -4,7 +4,7 @@ import React from "react";
 export default function Home() {
     return (
         <div className="w-full min-h-screen bg-linear-to-br from-[#eef4ff] via-[#d9e8ff] to-[#bbd4ff] flex items-center justify-center px-4 md:px-6 py-8">
-            <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+            <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center pt-22">
 
                 {/* LEFT CONTENT - SEO Optimized */}
                 <div className="text-center md:text-left">

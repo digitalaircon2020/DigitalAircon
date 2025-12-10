@@ -225,7 +225,7 @@ export default function ServiceDetailPage() {
 
     return (
         <main className="min-h-screen bg-[#f6f7fb]">
-            <h2 className=" pt-10 text-4xl text-center font-extrabold text-[#1e40af]">
+            <h2 className=" pt-28 text-4xl text-center font-extrabold text-[#1e40af]">
                 Service Details
             </h2>
 

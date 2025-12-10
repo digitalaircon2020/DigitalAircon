@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, Mail, Send } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 
 export default function AppleAirconForm() {
     const [form, setForm] = useState({

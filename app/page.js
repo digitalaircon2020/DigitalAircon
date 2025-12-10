@@ -11,14 +11,14 @@ import ServiceForm from "../components/ServiceForm";
 import ChooseUs from "../components/ChooseUs";
 
 
-
-
-
 export default function Page() {
   return (
     <>
-    <Home />
-    <ServicesHighlight />
+    <Home  />
+    <div id="servicesHighlight">
+      <ServicesHighlight />   
+    </div>
+     
     <ChooseUs />
 <div id="serviceForm">
   <ServiceForm />

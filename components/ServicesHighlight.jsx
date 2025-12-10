@@ -84,7 +84,7 @@ export default function ServicesHighlight() {
     }
 
     return (
-        <section className="w-full bg-[#f6f7fb] py-15 px-4 sm:px-6 overflow-hidden">
+        <section className="w-full bg-[#f6f7fb] py-15 px-4 sm:px-6 overflow-hidden pt-22">
             <div className="max-w-7xl mx-auto">
 
                 {/* HEADING */}

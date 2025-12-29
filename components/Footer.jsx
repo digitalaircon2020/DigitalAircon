@@ -30,7 +30,7 @@ export default function Footer() {
                         </div>
                         <div className="flex items-start gap-2">
                             <MapPin className="w-5 h-5 text-blue-300 shrink-0 mt-0.5" />
-                            <span>Shop no 05, plot 36/B, Sector 20, Kharghar, Navi Mumbai.</span>
+                            <span>Shop no 05, Meera sadan, plot 36/B, Sector 20, Kharghar, Navi Mumbai.</span>
                         </div>
                     </div>
                 </div>
@@ -99,13 +99,13 @@ export default function Footer() {
 
                         <div className="space-y-3 mb-6">
                             <div className="flex justify-between items-center">
-                                <span className="text-gray-300 text-sm">Monday - Saturday</span>
+                                <span className="text-gray-300 text-sm">Monday - Sunday</span>
                                 <span className="text-white font-medium text-sm">9:00 AM - 11:00 PM</span>
                             </div>
-                            <div className="flex justify-between items-center">
+                            {/* <div className="flex justify-between items-center">
                                 <span className="text-gray-300 text-sm">Sunday</span>
                                 <span className="text-white font-medium text-sm">10:00 AM - 11:00 PM</span>
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* Rating Section (Same Style as Hours) */}

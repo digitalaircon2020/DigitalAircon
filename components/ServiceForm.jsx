@@ -20,7 +20,7 @@ export default function AppleAirconForm() {
             return;
         }
 
-        const whatsappNumber = "918879873774";
+        const whatsappNumber = "917666161814";
 
         const text = `
 Hello Digital Aircon 👋
@@ -68,7 +68,7 @@ Hello Digital Aircon 👋
                         </div>
                         <div className="flex items-center gap-3">
                             <Phone className="text-[#1e40af]" size={18} />
-                            +91 8879873774
+                            +91 7666161814
                         </div>
                     </div>
                 </div>

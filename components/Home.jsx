@@ -32,7 +32,7 @@ export default function Home() {
                     {/* CTA Buttons */}
                     <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                         <a
-                            href="tel:+918879873774"
+                            href="tel:+917666161814"
                             className="px-7 py-3.5 rounded-xl bg-[#1e40af] text-white font-semibold shadow-lg hover:bg-[#1e3a8a] transition transform hover:-translate-y-1 duration-300 flex items-center justify-center gap-2"
                             aria-label="Call AC Repair Service Navi Mumbai"
                         >

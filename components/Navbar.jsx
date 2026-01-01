@@ -127,7 +127,7 @@ export default function Navbar() {
 
                         {/* ✅ NAVBAR CTA (Soft, Balanced) */}
                         <a
-                            href="tel:+918879873774"
+                            href="tel:+917666161814"
                             className="ml-4 inline-flex items-center gap-2 px-5 py-2.5 rounded-full
                             border-2 border-[#1e40af] text-[#1e40af] text-sm font-semibold
                             hover:bg-[#1e40af] hover:text-white

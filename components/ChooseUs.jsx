@@ -432,7 +432,7 @@ export default function WhyChooseUs() {
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <motion.a
-                            href="tel:+918879873774"
+                            href="tel:+917666161814"
                             className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-[#1e40af] text-white font-semibold shadow-lg hover:bg-[#1e3a8a] transition hover:-translate-y-1 flex items-center justify-center gap-2 relative overflow-hidden group"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

@@ -290,7 +290,7 @@ export default function ServiceDetailPage() {
 
                             {/* CTA Buttons */}
                             <div className="mt-10 flex flex-wrap gap-4">
-                                <a href="tel:+91 8879873774"
+                                <a href="tel:+91 7666161814"
                                     className="px-8 py-3.5 rounded-full bg-white border-2 border-[#1e40af] text-black font-semibold transition transform hover:-translate-y-1 hover:bg-[#1e40af] hover:text-white duration-300 flex items-center gap-2">
                                     <Phone size={10} />
                                     Book Service Now
@@ -392,7 +392,7 @@ export default function ServiceDetailPage() {
                             <div className="mt-8 pt-8 border-t border-gray-200">
                                 <h4 className="font-bold text-gray-800 mb-4">Need Help?</h4>
                                 <a
-                                    href="tel:+918879873774"
+                                    href="tel:+917666161814"
                                     className="w-full flex items-center justify-center gap-3 py-3.5 rounded-xl bg-[#1e40af] text-white font-semibold hover:bg-blue-700 transition mb-3"
                                 >
                                     <Phone size={10} />

@@ -35,7 +35,7 @@ export default function ContactUsPage() {
             icon: <Phone className="w-6 h-6 text-blue-700" />,
             title: "Phone Number",
             value: "+91 88798 73774",
-            link: "tel:+918879873774",
+            link: "tel:+917666161814",
         },
         {
             icon: <Mail className="w-6 h-6 text-blue-700" />,
@@ -47,7 +47,7 @@ export default function ContactUsPage() {
             icon: <MessageSquare className="w-6 h-6 text-blue-700" />,
             title: "WhatsApp Chat",
             value: "Chat with us instantly",
-            link: "https://wa.me/918879873774?text=Hello%20Apple%20Aircon!",
+            link: "https://wa.me/917666161814?text=Hello%20Apple%20Aircon!",
         },
     ];
 
